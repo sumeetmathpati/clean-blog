@@ -1,0 +1,53 @@
+---
+layout: home
+---
+
+<h1 id="owner_name">Hi, I'm {{ site.first_name }}</h1>
+<p id="about">{{ site.about }}</p>
+
+{% if site.quote %}
+<div class="w3-panel w3-light-grey">
+  <span style="font-size:150px;line-height:0.6em;opacity:0.2">❝</span>
+  <p class="w3-large" style="margin-top:-40px"><i>{{ site.quote }}</i><br><strong
+      class="w3-margin-top">{{ site.quote_author }}</strong></p>
+</div>
+{% endif %}
+
+<h2 style="font-weight: bold;">Recommanded</h2>
+<ul id="post-list" class="">
+  {% for post in site.posts %}
+  {% if post.recommanded %}
+  <li>
+    <div class="w3-row">
+      <div class="w3-col l9">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="w3-col l3 post-date">
+        <span>{{ post.date | date: "%B %d, %Y"}}</span>
+      </div>
+    </div>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h2 style="font-weight: bold;">Blog posts</h2>
+
+<ul id="post-list" class="">
+  {% for post in site.posts %}
+  {% if post.recommanded %}
+  {% continue %}
+  {% endif %}
+  <li>
+    <div class="w3-row">
+      <div class="w3-col l9">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="w3-col l3 post-date">
+        <span>{{ post.date | date: "%B %d, %Y"}}</span>
+      </div>
+    </div>
+  </li>
+  
+  {% endfor %}
+</ul>

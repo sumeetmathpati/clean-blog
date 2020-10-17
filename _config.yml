@@ -1,0 +1,32 @@
+title: Clean Blog
+email: sumeet.mathpati@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A simple and minimal jekyll theme.
+baseurl: "/clean-blog" # the subpath of your site, e.g. /blog
+url: "https://sumeetmathpati.github.io/clean-blog" # the base hostname & protocol for your site, e.g. http://example.com
+
+first_name: Jane 
+last_name: Doe
+about: "I am a software engineering student. I am computer science and engineering undergrad. I love to FOSS. When I am not using computer I like to watch movies, TV shows, read books."
+github_username:  sumeetmathpati
+quote: "Proprietary software is an injustice."
+quote_author: "Richard Stallman"
+
+permalink: /:title/
+include: ["_pages"]
+favicon: "./logo.png" # relative path to site's favicon
+goat_counter: "" # put your GoatCounter name if you want to use GoatCounter analytics
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

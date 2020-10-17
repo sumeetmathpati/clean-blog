@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body class="w3-container">
+
+    <div id="header" class="w3-content w3-margin-top">
+        {% if page.name == "index.html" %}
+        <img class="" src="/assets/images/avatar_g.jpg" alt="" style="border-radius: 50%; width: 100px;">   
+        {% else %}
+        <a href="{{ site.baseurl }}/"><img id="header-image" class="" src="/assets/images/avatar_g.jpg" alt="" style="border-radius: 50%; width: 80px;"></a>
+        {% endif %}
+    </div>
+
+    <div id="page-content" class="w3-content">
+
+        {{ content }}
+
+    </div>
+
+    {% if site.goat_counter and jekyll.environment == "production" %}
+    {% include goat_counter.html %}
+    {% endif %}
+
+</body>
+
+</html>
