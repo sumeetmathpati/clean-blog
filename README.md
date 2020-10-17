@@ -1,7 +1,7 @@
 # clean-blog
 
 <h3 align="center"><a href="https://sumeetmathpati.github.io/clean-blog/">View Demo</a></h3>
-<p>Inspired by <a href="http://nicolasgallagher.com/">no-style-please</a></p>
+<p>Inspired by <a href="http://nicolasgallagher.com/">Nicolas Gallagher's Blog</a></p>
 
 
 ## Features
