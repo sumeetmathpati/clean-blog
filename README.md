@@ -6,9 +6,9 @@
 
 ## Features
 
-* Google analytics
 * Responsive
 * SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
-* Fully compatible with [GitHub Pages](https://pages.github.com/) (see [GitHub Pages installation](#github-pages-installation))
+* Fully compatible with [GitHub Pages](https://pages.github.com/))
+* Goat counter analytics
 
