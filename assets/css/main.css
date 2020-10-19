@@ -113,4 +113,8 @@ code {
     text-decoration: none;
 }
 
+#social-icons i{
+    font-size: 24px;
+    margin: 4px;
+}
 
