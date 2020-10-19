@@ -7,7 +7,7 @@
 
     <div id="header" class="w3-content w3-margin-top">
         {% if page.name == "index.html" %}
-        <img class="" src="/assets/images/avatar_g.jpg" alt="" style="border-radius: 50%; width: 100px;">   
+        <img class="" src="{{ site.baseurl }}{{ site.avatar }}" alt="" style="border-radius: 50%; width: 100px;">   
         {% else %}
         <a href="{{ site.baseurl }}/"><img id="header-image" class="" src="/assets/images/avatar_g.jpg" alt="" style="border-radius: 50%; width: 80px;"></a>
         {% endif %}

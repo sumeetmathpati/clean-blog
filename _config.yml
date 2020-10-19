@@ -5,20 +5,22 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/clean-blog" # the subpath of your site, e.g. /blog
 url: "https://sumeetmathpati.github.io/clean-blog" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Personal information
 first_name: Jane 
 last_name: Doe
+avatar: "/assets/images/avatar_g.jpg"
 about: "I am a software engineering student. I am computer science and engineering undergrad. I love to FOSS. When I am not using computer I like to watch movies, TV shows, read books."
 
-quote: "Proprietary software is an injustice."
-quote_author: "Richard Stallman"
-
+# Social media links
 github: "https://github.com/"
 linkedin: "https://www.linkedin.com/"
 twitter: "https://twitter.com/"
 facebook: "https://www.facebook.com/"
 instagram: "https://www.instagram.com/"
 
-
+# Quote to show on site
+quote: "Proprietary software is an injustice."
+quote_author: "Richard Stallman"
 
 permalink: /:title/
 include: ["_pages"]
