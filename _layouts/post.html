@@ -25,3 +25,26 @@ layout: default
 {% endif %}
 
 {{ content }}
+
+<hr>
+
+<div class="pagination w3-center ">
+    <div class="w3-row">
+        {% if page.previous.url %}
+        <a href="{{ site.baseurl }}{{ page.previous.url }}"
+            class="w3-left w3-margin-bottom">
+            &lt;&lt; {{ page.previous.title }}
+        </a>
+        
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{ site.baseurl }}{{ page.next.url }}"
+            class="w3-right">{{ page.next.title }} &gt;&gt;</a>
+        {% endif %}
+    </div>
+
+</div>
+
+<hr>
+
+<br>
