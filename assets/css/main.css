@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, a, ul {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 a {
@@ -37,20 +37,21 @@ ul {
 }
 
 ul li{
-    padding:8px 16px;
-    border-bottom:1px solid #ddd
+    padding:8px 8px;
+    border: 1px solid #ddd;
+    
 }
 
-ul li:last-child{
+/* ul li:last-child{
     border-bottom:none
-}
+} */
 
 code {
     padding: 8px;
     font-family: "Fira Code";
 }
 
-p code {
+p code, ul code, li code, ol code {
     color: #e83e8c;
 }
 
@@ -99,7 +100,11 @@ p code {
 }
 
 .highlight {
-    padding: 8px;
+    padding: 8px;   
+}
+
+pre.highlight {
+    overflow-x: auto;
 }
 
 .toc {
