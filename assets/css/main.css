@@ -50,6 +50,10 @@ code {
     font-family: "Fira Code";
 }
 
+p code {
+    color: #e83e8c;
+}
+
 #header, #page-content {
     max-width: 600px;
     margin-bottom: 32px;
