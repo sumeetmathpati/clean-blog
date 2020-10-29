@@ -1,0 +1,33 @@
+---
+title: "Tags"
+layout: default
+permalink: "/tags.html"
+---
+
+
+
+
+<div>
+    {% for tag in site.tags %}
+    <h2 style="font-weight: bold;">Tag: <span>'{{ tag[0] }}'</span></h2>
+    {% assign pages_list = tag[1] %}
+    <ul id="post-list" class="">
+        {% for post in pages_list %}
+        {% if post.recommanded %}
+        {% continue %}
+        {% endif %}
+        <li>
+            <div class="w3-row">
+                <div class="w3-col l9">
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </div>
+                <div class="w3-col l3 post-date">
+                    <span>{{ post.date | date: "%B %d, %Y"}}</span>
+                </div>
+            </div>
+        </li>
+
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

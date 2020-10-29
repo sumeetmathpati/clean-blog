@@ -2,8 +2,8 @@ title: Clean Blog
 email: sumeet.mathpati@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A simple and minimal jekyll theme.
-baseurl: "/clean-blog" # the subpath of your site, e.g. /blog
-url: "https://sumeetmathpati.github.io/clean-blog" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Personal information
 first_name: Jane 
@@ -31,6 +31,14 @@ goat_counter: "" # put your GoatCounter name if you want to use GoatCounter anal
 # paginate: 9
 # paginate_path: /page:num/
 
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
 # Build settings
 theme: minima
 plugins:
@@ -39,6 +47,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-paginate
+  - jekyll-archives
 
 markdown: kramdown
 

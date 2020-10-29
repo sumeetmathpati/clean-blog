@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting started with BASH"
 image: assets/images/17.jpg
-tags: [Bash, Linux]
+tags: [bash, linux, dbms]
 author: Sumeet Mathpati
 github: "https://github.com/sumeetmathpati"
 linkedin: "https://linkedin.com/in/sumeet221b"
